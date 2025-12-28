@@ -1,0 +1,37 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* App Menu - Matching lines 160-168 from your screenshot */
+#custom-appmenu {
+    background-color: @color11;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 14px;
+    padding: 0px 10px 0px 10px;
+    margin: 3px 15px 3px 14px;
+    opacity: 0.8;
+    border: 3px solid #FFFFFF;
+}
+
+/* All other modules styled as translucent "pills" */
+#custom-path, 
+#pulseaudio, 
+#battery, 
+#network, 
+#clock {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    border-radius: 14px;
+    padding: 2px 12px;
+    margin: 3px 2px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
