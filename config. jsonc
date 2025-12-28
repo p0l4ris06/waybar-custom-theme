@@ -23,9 +23,11 @@
     },
 
     "custom/path": {
-        "format": "polaris@arch:~/dotfiles/waybar",
-        "tooltip": false
-    },
+    "exec": "$HOME/.config/waybar/scripts/get_path.sh",
+    "interval": 1, // Updates every second
+    "format": "󰉋 {}",
+    "tooltip": false
+},
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
